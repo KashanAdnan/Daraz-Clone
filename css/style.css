@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+.first {
+    background-color: #ccc;
+    text-align: right;
+}
+
+.first ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.first ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+.first ul li .Anchor_tag {
+    color: #f85606;
+}
+
+.first ul li a:hover {
+    color: #f85606;
+    text-decoration: underline;
+}
+
+nav {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li img {
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+.logo {
+    width: 135px;
+}
+
+nav input {
+    background-color: #e7e8ec;
+    box-sizing: border-box;
+    padding: 15px 430px 15px 10px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #212121;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 2px;
+    margin-bottom: 450px;
+}
+
+input::placeholder {
+    text-align: left;
+}
+
+nav ul li .search {
+    background-color: #f85606;
+    margin-left: -50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.cart {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.down {
+    width: 250px;
+    margin-left: 20px;
+}
+
+.imgSlider {
+    width: 73%;
+    margin-left: 390px;
+    background-size: 100% 100%;
+    height: 400px;
+    margin-top: -420px;
+    background-image: url(../images/B1.jpeg);
+    animation: changeImage 30s linear infinite;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url(../images/B1.jpeg);
+    }
+
+    10% {
+        background-image: url(../images/B2.jpg);
+    }
+
+    25% {
+        background-image: url(../images/B3.png);
+    }
+
+    50% {
+        background-image: url(../images/B4.jpeg);
+    }
+
+    75% {
+        background-image: url(../images/B5.jpeg);
+    }
+
+    100% {
+        background-image: url(../images/B6.png);
+    }
+}
+
+.draz {
+    margin-top: -400px;
+    margin-left: 150px;
+    background-color: #fff;
+    width: 240px;
+    height: 400px;
+}
+
+.draz ul li {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px;
+}
+.container{
+    background-color: aqua;
+    animation: changeColor 30s linear infinite;
+}
+@keyframes changeColor {
+    0% {
+        background-color: aqua;
+    }
+
+    10% {
+        background-color: #fff;   
+     }
+
+    25% {
+        background-color: lightgrey;    
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: lightpink;    
+    }
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.demart img,.fashion img,.beauty img{
+    width: 40px;
+    margin-bottom: -7px;
+    margin-left: -30px;
+    /* margin-top: 20px;÷ */
+}
+.demart:hover ,.fashion:hover ,.beauty:hover{
+    padding: 0px 30px;
+    margin: 10px 30px;
+    width: 360px;
+    height: 40px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0 ,0.5 );
+    border-radius: 20px;
+    cursor: pointer;
+}
+.demart ,.fashion ,.beauty {
+    padding: 0px 30px;
+    background-color: #fff;
+    margin: 10px 30px;
+    width: 360px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.demart p,.fashion p ,.beauty p{
+    /* margin-top: -20px; */
+    margin-bottom: 20px;
+    display: inline;
+}
+.sale button{
+    border: 1px solid #f85606;
+    color: #f85606;
+    padding: 5px 10px;
+    background-color: transparent;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+}
+
+.sale .timer{
+    display: flex;
+    margin-left: -490px;
+}
+.sale .timer p{
+    color: #212121;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.sale .timer .hour{
+    background-color: #f85606;
+    padding: 9px 10px;
+    color: #fff;
+}
+.sale .timer .minute{
+    background-color: #f85606;
+    padding: 9px 10px;
+    color: #fff;
+    margin: 0 10px;
+}
+.sale .timer .second{
+    background-color: #f85606;
+    padding: 9px 10px;
+    color: #fff;
+    margin: 0 10px;
+}
+.sale p{
+    color: #f85606;
+    margin-left: 90px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+.sale{
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 5px 70px;
+    margin-left: 130px;
+    border-bottom: 1px solid #ccc;
+    width: 1200px;
+}
+.card_conatiner{
+    display: flex;
+    padding: 10px 150px;
+    background-color: #fff;
+    width: 1200px;
+    margin-left: 130px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin-left: -4px;
+}
+.card_conatiner .card img{
+    width: 188px;
+    height: 188px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.card_conatiner .card span{
+    color: #f85606;
+}
+.card_conatiner .card .price_cut{
+    color: #212121;
+    font-size: 13px;
+}
+.card_conatiner .card del{
+    color: #212121;
+    font-size: 13px;
+}
+.hed h1{
+    font-size: 22px;
+    color: #212121;
+    margin: 10px 130px;
+}
